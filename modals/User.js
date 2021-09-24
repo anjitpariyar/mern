@@ -1,6 +1,6 @@
-assign: const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
-outer : const UserSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -22,7 +22,3 @@ outer : const UserSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
-
-
-
- 
